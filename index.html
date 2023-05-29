@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="index.css">
+        <title>Tip Calculator</title>
+    </head>
+    <body>
+        <h1>Tip Calculator</h1>
+
+        <form>
+            <label for="subtotal">How much does the meal cost?</label>
+            <input
+            required
+            min="0"
+            id="subtotal"
+            name="subtotal"
+            type="number"
+            placeholder="47.89"
+            >
+
+            <label for="percentage">How much would you like to tip (percentage)?</label>
+            <input
+            required
+            min="0"
+            max="100"
+            id="percentage"
+            name="percentage"
+            type="number"
+            placeholder="15"
+            >
+
+            <button onclick="getTipAndTotal(); return false">Get Tip and Total</button>
+        </form>
+
+        <button onclick="reset(); return false">Reset</button>
+
+        <div id="results">
+            <p id="total-tip"></p>
+
+            <p id="total-bill"></p>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
