@@ -40,6 +40,10 @@ input {
     border-radius: 16pt;
 }
 
+input:first-of-type {
+    width: 8ch;
+}
+
 button, .button{
     width: 17ch;
     font-size: 12pt;
