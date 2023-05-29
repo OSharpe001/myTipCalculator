@@ -72,8 +72,16 @@ nav {
 }
 
 a {
+    font-weight: bold;
+    color: rgb(1, 74, 1);
+    text-decoration: none;
     font-size: 16pt;
-    padding: 5px
+    padding: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: lightgreen;
 }
 
 @media (max-width: 500px) {
