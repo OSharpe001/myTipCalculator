@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    padding: 0;
-    min-height: 98vh;
-    max-height:max-content;
+    padding: auto;
+    height: 98vh;
+    min-height: max-content;
     text-align: center;
     border: 1vh solid rgb(1, 74, 1);
     background-size:cover;
@@ -41,7 +41,7 @@ input {
 }
 
 input:first-of-type {
-    width: 8ch;
+    width: 9ch;
 }
 
 button, .button{
@@ -54,6 +54,10 @@ button, .button{
     border: 2px solid green;
 }
 
+button:hover {
+    text-decoration: underline;
+}
+
 p {
     width: 430px;
     margin: 20px auto;
@@ -63,12 +67,15 @@ p {
     background-color: aliceblue;
 }
 
+p:nth-of-type(2) {
+    margin-bottom: 25vh;
+}
+
 footer {
-    position: absolute;
     height: max-content;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(1, 74, 1);
+    margin-top: 55vh;
+    text-align:center;
+    margin: auto;
 }
 
 nav {
@@ -88,9 +95,10 @@ a:hover {
     background-color: lightgreen;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     body {
-        background-size: cover;
+        min-height: 98.1vh;
+        height: max-content;
         background-position: 55%;
     }
 
@@ -110,10 +118,10 @@ a:hover {
     p {
         width: 90%;
     }
-}
 
-@media (max-width: 350px) {
     footer {
-        position:relative;
+        position:sticky;
+        bottom: 0px;
     }
 }
+
