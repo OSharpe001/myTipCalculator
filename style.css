@@ -27,7 +27,7 @@ form {
 }
 
 label {
-    text-shadow: 2px 2px aliceblue;
+    text-shadow: 1px 1px aliceblue;
     margin: 5px auto;
     padding: auto;
 }
@@ -101,7 +101,19 @@ a:hover {
         width: auto;
     }
 
+    label {
+        padding: 3px 5px;
+        border-radius: 16px;
+        background-color: rgba(239, 247, 255, .5);
+    }
+
     p {
         width: 90%;
+    }
+}
+
+@media (max-width: 350px) {
+    footer {
+        position:relative;
     }
 }
